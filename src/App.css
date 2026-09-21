@@ -38,7 +38,7 @@ button:focus-visible {
 }
 
 .portfolio {
-  min-height: 100vh;
+  min-height: min(760px, 100vh);
   overflow: hidden;
   background:
     radial-gradient(
@@ -112,7 +112,7 @@ button:focus-visible {
 
   color: rgba(241, 243, 237, 0.64);
 
-  font-size: 0.78rem;
+  font-size: 0.84rem;
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -179,9 +179,12 @@ button:focus-visible {
 .hero {
   position: relative;
 
+  max-width: 1240px;
+  margin-inline: auto;
+
   min-height: 100vh;
 
-  padding: 150px 6vw 90px;
+  padding: 125px 6vw 64px;
 
   display: grid;
   grid-template-columns:
@@ -230,7 +233,7 @@ button:focus-visible {
 
   color: rgba(241, 243, 237, 0.58);
 
-  font-size: 0.69rem;
+  font-size: 0.76rem;
   font-weight: 700;
 
   letter-spacing: 0.16em;
@@ -309,23 +312,21 @@ button:focus-visible {
   background: #a4b99a;
   color: #10150f;
 
-  font-size: 0.76rem;
+  font-size: 0.82rem;
   font-weight: 800;
 
   letter-spacing: 0.07em;
   text-transform: uppercase;
 
   cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
 
   transition:
     transform 0.25s ease,
     background 0.25s ease,
     box-shadow 0.25s ease;
-}
-
-.primary-button span {
-  margin-left: 12px;
-  font-size: 1rem;
 }
 
 .primary-button:hover {
@@ -343,7 +344,7 @@ button:focus-visible {
 
   color: rgba(241, 243, 237, 0.68);
 
-  font-size: 0.76rem;
+  font-size: 0.82rem;
   font-weight: 700;
 
   letter-spacing: 0.1em;
@@ -378,7 +379,7 @@ button:focus-visible {
 .hero-meta strong {
   color: #a5b99b;
 
-  font-size: 0.74rem;
+  font-size: 0.8rem;
   letter-spacing: 0.12em;
 }
 
@@ -387,7 +388,7 @@ button:focus-visible {
 
   color: rgba(241, 243, 237, 0.43);
 
-  font-size: 0.7rem;
+  font-size: 0.76rem;
   line-height: 1.5;
 }
 
@@ -399,8 +400,8 @@ button:focus-visible {
 .portrait-area {
   position: relative;
 
-  width: min(100%, 650px);
-  height: 680px;
+  width: min(100%, 560px);
+  height: 550px;
 
   justify-self: end;
 
@@ -582,7 +583,7 @@ button:focus-visible {
 
   color: rgba(241, 243, 237, 0.36);
 
-  font-size: 0.62rem;
+  font-size: 0.7rem;
   font-weight: 700;
 
   letter-spacing: 0.13em;
@@ -637,7 +638,7 @@ button:focus-visible {
 .marquee {
   width: 100%;
 
-  padding: 20px 0;
+  padding: 14px 0;
 
   overflow: hidden;
 
@@ -657,7 +658,7 @@ button:focus-visible {
 
   color: rgba(241, 243, 237, 0.35);
 
-  font-size: 0.68rem;
+  font-size: 0.75rem;
   font-weight: 800;
 
   letter-spacing: 0.2em;
@@ -687,7 +688,10 @@ button:focus-visible {
 ========================================================= */
 
 .section {
-  padding: 140px 6vw;
+  max-width: 1240px;
+  margin-inline: auto;
+
+  padding: 92px 6vw;
 
   scroll-margin-top: 80px;
 }
@@ -697,11 +701,11 @@ button:focus-visible {
   align-items: center;
   gap: 14px;
 
-  margin-bottom: 65px;
+  margin-bottom: 42px;
 
   color: rgba(241, 243, 237, 0.38);
 
-  font-size: 0.68rem;
+  font-size: 0.75rem;
   font-weight: 800;
 
   letter-spacing: 0.16em;
@@ -770,16 +774,18 @@ button:focus-visible {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 
-  margin: 0 6vw;
+  width: calc(100% - 12vw);
+  max-width: 1240px;
+  margin: 0 auto;
 
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .stats div {
-  min-height: 160px;
+  min-height: 120px;
 
-  padding: 35px 25px;
+  padding: 25px;
 
   display: flex;
   flex-direction: column;
@@ -808,7 +814,7 @@ button:focus-visible {
 
   color: rgba(241, 243, 237, 0.4);
 
-  font-size: 0.68rem;
+  font-size: 0.75rem;
   line-height: 1.5;
 
   text-transform: uppercase;
@@ -828,7 +834,7 @@ button:focus-visible {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
 
-  margin-top: 75px;
+  margin-top: 48px;
 
   border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
@@ -836,9 +842,9 @@ button:focus-visible {
 .skills-grid article {
   position: relative;
 
-  min-height: 260px;
+  min-height: 215px;
 
-  padding: 38px 40px;
+  padding: 30px 34px;
 
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 
@@ -858,7 +864,7 @@ button:focus-visible {
 .skills-grid article > span {
   color: #82977a;
 
-  font-size: 0.65rem;
+  font-size: 0.72rem;
   font-weight: 800;
 
   letter-spacing: 0.12em;
@@ -911,7 +917,7 @@ button:focus-visible {
   align-items: center;
   gap: 10px;
 
-  margin-top: 65px;
+  margin-top: 42px;
   margin-bottom: 30px;
 
   flex-wrap: wrap;
@@ -925,7 +931,7 @@ button:focus-visible {
   background: transparent;
   color: rgba(241, 243, 237, 0.44);
 
-  font-size: 0.63rem;
+  font-size: 0.7rem;
   font-weight: 800;
 
   letter-spacing: 0.12em;
@@ -956,7 +962,7 @@ button:focus-visible {
 .project-card {
   position: relative;
 
-  min-height: 420px;
+  min-height: 330px;
 
   padding: 30px;
 
@@ -994,7 +1000,7 @@ button:focus-visible {
 .project-number {
   color: #819679;
 
-  font-size: 0.7rem;
+  font-size: 0.76rem;
   font-weight: 800;
 }
 
@@ -1003,7 +1009,7 @@ button:focus-visible {
 
   color: rgba(241, 243, 237, 0.37);
 
-  font-size: 0.61rem;
+  font-size: 0.69rem;
   font-weight: 800;
 
   letter-spacing: 0.14em;
@@ -1048,42 +1054,11 @@ button:focus-visible {
 
   color: rgba(241, 243, 237, 0.42);
 
-  font-size: 0.58rem;
+  font-size: 0.66rem;
   font-weight: 700;
 
   letter-spacing: 0.04em;
 }
-
-.project-arrow {
-  position: absolute;
-
-  right: 30px;
-  bottom: 30px;
-
-  width: 42px;
-  height: 42px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  border: 1px solid rgba(255, 255, 255, 0.1);
-
-  color: #a5b99b;
-
-  font-size: 1rem;
-
-  transition:
-    transform 0.3s ease,
-    background 0.3s ease;
-}
-
-.project-card:hover .project-arrow {
-  transform: translate(4px, -4px);
-
-  background: rgba(157, 180, 146, 0.1);
-}
-
 
 /* =========================================================
    VISION
@@ -1092,12 +1067,15 @@ button:focus-visible {
 .vision {
   position: relative;
 
-  padding: 150px 6vw;
+  max-width: 1240px;
+  margin-inline: auto;
+
+  padding: 92px 6vw;
 
   display: grid;
-  grid-template-columns: 100px minmax(0, 850px);
+  grid-template-columns: 70px minmax(0, 1fr) minmax(300px, 420px);
 
-  gap: 70px;
+  gap: clamp(30px, 5vw, 70px);
 
   border-top: 1px solid rgba(255, 255, 255, 0.07);
   border-bottom: 1px solid rgba(255, 255, 255, 0.07);
@@ -1113,14 +1091,14 @@ button:focus-visible {
 .vision-number {
   color: #819679;
 
-  font-size: 0.7rem;
+  font-size: 0.76rem;
   font-weight: 800;
 }
 
 .small-title {
   color: #8fa982;
 
-  font-size: 0.65rem;
+  font-size: 0.72rem;
   font-weight: 800;
 
   letter-spacing: 0.16em;
@@ -1150,6 +1128,51 @@ button:focus-visible {
 
   font-size: 0.9rem;
   line-height: 1.8;
+}
+
+.vision-visual {
+  align-self: center;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(157, 180, 146, 0.2);
+  background:
+    linear-gradient(135deg, rgba(125, 160, 115, 0.1), rgba(11, 16, 12, 0.12)),
+    rgba(255, 255, 255, 0.015);
+}
+
+.vision-visual svg {
+  display: block;
+  width: 100%;
+  height: 270px;
+}
+
+.vision-visual .globe-fill {
+  fill: url(#globe-fill);
+}
+
+.vision-visual .globe-line {
+  stroke: rgba(220, 239, 213, 0.22);
+  stroke-width: 1;
+}
+
+.vision-visual .globe-outline {
+  stroke: rgba(220, 239, 213, 0.62);
+  stroke-width: 1.5;
+}
+
+.vision-visual .africa {
+  fill: rgba(204, 229, 194, 0.58);
+  stroke: rgba(234, 247, 229, 0.74);
+  stroke-width: 1.3;
+}
+
+.vision-visual .africa-detail {
+  stroke: rgba(69, 107, 78, 0.46);
+  stroke-width: 1;
 }
 
 
@@ -1189,6 +1212,49 @@ button:focus-visible {
   margin-top: 30px;
 }
 
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+
+  margin-top: 68px;
+}
+
+.social-links a {
+  width: 48px;
+  height: 48px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(255, 255, 255, 0.14);
+
+  color: rgba(241, 243, 237, 0.64);
+
+  transition:
+    color 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease,
+    background 0.25s ease;
+}
+
+.social-links a:hover {
+  transform: translateY(-4px);
+
+  border-color: #a4b99a;
+
+  background: rgba(164, 185, 154, 0.1);
+  color: #c0d2b7;
+}
+
+.social-links svg {
+  width: 21px;
+  height: 21px;
+
+  fill: currentColor;
+}
+
 
 /* =========================================================
    FOOTER
@@ -1222,7 +1288,7 @@ footer {
 footer p {
   color: rgba(241, 243, 237, 0.35);
 
-  font-size: 0.67rem;
+  font-size: 0.74rem;
 
   text-align: center;
 }
@@ -1233,7 +1299,7 @@ footer button {
 
   color: rgba(241, 243, 237, 0.45);
 
-  font-size: 0.65rem;
+  font-size: 0.72rem;
   font-weight: 700;
 
   letter-spacing: 0.08em;
@@ -1264,7 +1330,7 @@ footer button:hover {
   }
 
   .portrait-area {
-    height: 580px;
+    height: 500px;
   }
 
   .orbit-one {
@@ -1283,6 +1349,15 @@ footer button:hover {
 
   .project-card:last-child {
     grid-column: span 2;
+  }
+
+  .vision {
+    grid-template-columns: 70px minmax(0, 1fr);
+  }
+
+  .vision-visual {
+    grid-column: 2;
+    width: min(100%, 500px);
   }
 
 }
@@ -1404,7 +1479,7 @@ footer button:hover {
   /* SECTIONS */
 
   .section {
-    padding: 95px 5vw;
+    padding: 72px 5vw;
   }
 
   .section-label {
@@ -1493,18 +1568,23 @@ footer button:hover {
   }
 
   .project-card {
-    min-height: 390px;
+    min-height: 325px;
   }
 
 
   /* VISION */
 
   .vision {
-    padding: 100px 5vw;
+    padding: 76px 5vw;
 
     grid-template-columns: 1fr;
 
     gap: 25px;
+  }
+
+  .vision-visual {
+    grid-column: auto;
+    min-height: 270px;
   }
 
   .vision h2 {
@@ -1547,7 +1627,7 @@ footer button:hover {
   }
 
   .availability {
-    font-size: 0.58rem;
+    font-size: 0.68rem;
   }
 
   .hero-actions {
@@ -1561,7 +1641,7 @@ footer button:hover {
   }
 
   .portrait-area {
-    height: 430px;
+    height: 380px;
   }
 
   .portrait-frame img {
@@ -1594,7 +1674,7 @@ footer button:hover {
   }
 
   .project-card {
-    min-height: 370px;
+    min-height: 310px;
 
     padding: 25px;
   }
