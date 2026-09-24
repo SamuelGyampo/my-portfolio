@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import profileImage from './assets/samuel-profile.png'
 
+
 function App() {
   const [menuOpen, setMenuOpen] = useState(false)
   const [activeProject, setActiveProject] = useState('All')
