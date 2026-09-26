@@ -6,6 +6,8 @@ import Contact from './components/Contact'
 import Vision from './components/Vision'
 import Marquee from './components/Marquee'
 import Stats from './components/Stats'
+import Footer from './components/Footer'
+
 
 
 
@@ -368,23 +370,9 @@ function App() {
       {/* =========================
           FOOTER
       ========================== */}
-      <footer>
 
-        <div className="footer-brand">
-          SG<span>.</span>
-        </div>
-
-        <p>
-          Samuel Gyampo · Environmental & Safety Engineering
-        </p>
-
-        <button
-          onClick={() => scrollToSection('home')}
-        >
-          Back to top
-        </button>
-
-      </footer>
+      <Footer scrollToSection={scrollToSection}/>
+      
 
     </div>
   )
